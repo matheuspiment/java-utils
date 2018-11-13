@@ -15,14 +15,12 @@ public class Year {
     }
 
     /**
-     * Realiza a divisão de dois números.
+     * Verifica se um ano é bissexto.
      *
      * @param year          Ano a ser testado.
      * @return              Asirmação se o ano é ou não bissexto.
      *
-     * @throws UnsupportedOperationException Caso o divisor seja 0.
      */
-
     public static boolean isLeapYear(int year) {
         if((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))){
             return true;
